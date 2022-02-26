@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BoxIcons-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Challenges Alura</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="https://github.com/BrayanCJR7" class="nav__logo"><i class='bx bxl-github'></i> Mi GitHub </a>
+            
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active__link">
+                            <i class='bx bx-home-alt' ></i>
+                            <p class="nav__title"> Inicio</p>                            
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#encriptador" class="nav__link active__link">
+                            <i class='bx bx-edit-alt'></i>
+                            <p class="nav__title"> Encriptador</p>                           
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#ahorcado" class="nav__link active__link">
+                            <i class='bx bx-street-view'></i>
+                            <p class="nav__title"> Ahorcado</p>                           
+                        </a>
+                    </li>
+                </ul>                
+            </div>
+        </nav>
+
+    </header>
+    <main class="main">
+        <!--Home-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hola soy</span>
+                    <h1 class="home__name">Brayan Jiménez</h1>
+                    <h3 class="home__education">Desarrollador web</h3>                    
+                </div>                
+            </div>
+        </section>
+        <!--Encriptador-->
+        <section class="encriptador" id="encriptador">
+            <div class="encriptador__container container grid">
+                <span class="section__subtitle">Codigo Secreto</span>
+                <h2 class="section__title">Encriptador</h2>                
+                    <form class="encript__form" id="form-encriptar">
+                        <div class="encript__form-div">
+                            <!-- <label for="" class="encript__form-tag">Solo ingrese letras minusculas y sin acento.</label> -->                           
+                            <input type="text" placeholder="Ingrese el texto a encriptar" class="encript__form-input input" id="input-encriptar">
+                        </div>                    
+                        <button id="btn-encriptar" class="button">Encriptar</button>
+                        <button id="btn-desencriptar" class="button">Desencriptar</button>
+                    </form>
+                    <form class="encript__form">
+                        <div class="encript__form-div">
+                            <!-- <label for="" class="encript__form-tag">Mensaje encriptado</label> -->                            
+                            <input type="text" placeholder="" class="encript__form-input earea" id="mensaje-encriptado">
+                        </div>                    
+                        <button class="button services__button" id="btn-copiar">Copiar</button>                        
+                    </form>
+            </div>
+        </section>
+        <!--Ahorcado-->
+        <!-- <section class="ahorcado" id="ahorcado">
+            <div class="ahorcado__container container grid">
+                <div class="ahorcado__container container grid">
+                    <h2 class="section__title">Ahorcado</h2>
+                    <span class="btn__iniciar">
+                        <button class="button btn__iniciar" id="btn_iniciar">Iniciar Juego</button>
+                    </span>                    
+
+                    <div class="seccion__juego">
+                        <div class="seccion__juego-contenido">
+                            <i class='bx bx-x btn__cerrar' ></i>
+                            <h3 class="services__modal-title">¡Que empieze el juego!</h3>
+                            <p class="services__modal-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aperiam!
+                            </p>                           
+                        </div>
+                    </div>         
+
+                </div>
+                <form class="encript__form">
+                    <span class="section__subtitle">Tambien puede agregar palabras para que otras personas traten de adivinar</span>
+                    <div class="encript__form-div">                                                  
+                        <textarea type="text" placeholder="" class="encript__form-input earea" id="add-palabra"></textarea>
+                    </div>                    
+                    <button class="button services__button" id="btn__agregar-palabra">Agregar palabra</button>                        
+                </form>                
+            </div>
+        </section> -->
+        
+        <section></section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+     <script src="assets/js/main.js"></script>
+     <script src="assets/js/encriptar.js"></script>
+     <script src="assets/js/ahorcado.js"></script>
+           
+</body>    
+</html>
